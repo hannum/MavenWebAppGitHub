@@ -92,17 +92,18 @@ public class CoffeeMakerTest {
 //        fail("The test case is a prototype.");
 //    }
 //
-//    /**
-//     * Test of pressOnOff method, of class CoffeeMaker.
-//     */
-//    @Test
-//    public void testPressOnOff() {
-//        System.out.println("pressOnOff");
-//        CoffeeMaker instance = null;
-//        instance.pressOnOff();
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
+    /**
+     * Test of pressOnOff method, of class CoffeeMaker.
+     */
+    @Test
+    public void testPressOnOff() {
+        System.out.println("pressOnOff");
+        CoffeeMaker cm = CoffeeMaker.getInstance();
+        cm.pressOnOff();
+        assertTrue(cm.isOn());
+        cm.pressOnOff();
+        assertFalse(cm.isOn());
+    }
 //
 //      /**
 //     * Test of fillWater method, of class CoffeeMaker.
@@ -114,17 +115,7 @@ public class CoffeeMakerTest {
 //        instance.fillWater();
 //    }
 //
-//    /**
-//     * Test of fillBeans method, of class CoffeeMaker.
-//     */
-//    @Test
-//    public void testFillBeans() {
-//        System.out.println("CoffeeMakerTest: fillBeans");
-//        CoffeeMaker instance = null;
-//        instance.fillBeans();
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
+
 
     /**
      * Test of brew method, of class CoffeeMaker.
@@ -143,4 +134,16 @@ public class CoffeeMakerTest {
         assertEquals(cm.getPressed(), pressed+1);
     }
     
+    /**
+     * Test of fillBeans method, of class CoffeeMaker.
+     */
+    @Test
+    public void testFillBeans() {
+        System.out.println("CoffeeMakerTest: fillBeans");
+        CoffeeMaker cm = CoffeeMaker.getInstance();
+        cm.pressOnOff();
+        cm.brew();
+        cm.fillBeans();
+
+    }
 }
