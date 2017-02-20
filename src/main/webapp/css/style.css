@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+    font-family: cursive;
+}
+
+#content {
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    background-color: saddlebrown;
+}
+
+h1 {
+    font-size: 2em;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#main-buttons {
+    width: 100px;
+    height: 300px;
+    margin-left: 32px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#coffee-selection {
+    width: 260px;
+    margin-left: 40px;
+    text-align: left;
+    display: inline-block;
+    padding: 0 0 0 6px;
+    vertical-align: top;
+}
+
+button {
+    height: 55px;
+    width: 55px;
+    margin: 23px;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.button-off {
+    color: black;
+}
+
+.button-on {
+    color: red;
+}
+
+.button-on[value="pressOnOff"] {
+    color: green;
+}
+
+.coffee-text {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0;
+    width: 140px;
+    vertical-align: middle;
+}
+
+.coffee-button {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    vertical-align: middle;
+}
+
+#display-area {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.large-icon {
+    font-size: 2em;
+}
+
+.fa-power-off {
+    font-size: 2.5em;
+}
